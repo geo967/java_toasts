@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/GreenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:text="Hello World!" />
+
+        <TextView
+            style="@style/TextItalic.BigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape"
+            android:text="Hello World!" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/GreenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="@string/button_1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/GreenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:text="@string/button_2" />
+        </LinearLayout>
+
+        <Button
+            style="@style/GreenText"
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/shape"
+            android:text="@string/snack" />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
